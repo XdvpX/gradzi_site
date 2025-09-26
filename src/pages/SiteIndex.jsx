@@ -258,5 +258,5 @@ export default function SiteIndex(){
 <li><small>Design base: <a href="http://html5up.net" target="_blank">HTML5 UP</a></small></li>
 </ul>
 </div>
-</footer>`} /> 
+</footer>`}} />
 }
