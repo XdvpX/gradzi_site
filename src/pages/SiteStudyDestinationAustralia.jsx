@@ -1,6 +1,6 @@
 import React from 'react'
 export default function SiteStudyDestinationAustralia(){ 
-  return <main id="main-content" dangerouslySetInnerHTML={__html: `<header id="header">
+  return <main id="main-content" dangerouslySetInnerHTML={{ __html: `<header id="header">
 <a class="title" href="../index.html">Gradzi Overseas</a>
 <nav>
 <ul>
