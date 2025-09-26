@@ -18,7 +18,7 @@ export default function SiteIndex(){
 <div id="wrapper">
 <!-- Intro -->
 <section class="wrapper style1 fullscreen fade-up" id="intro">
-<img alt="Welcome to Gradzi Overseas" class="title-logo" src="images/gradzi.co.png"/>
+<img alt="Welcome to Gradzi Overseas" class="title-logo" src="/images/gradzi.co.png"/>
 <svg height="0" width="0">
 <defs>
 <lineargradient gradienttransform="rotate(45)" id="luxuryGradient">
@@ -53,78 +53,78 @@ export default function SiteIndex(){
 <section class="wrapper style2 spotlights" id="one">
 <!-- USA -->
 <section>
-<a class="image" href="study-destination/usa.html"><img alt="Admissions to USA" data-position="center center" src="images/pic01.jpg"/></a>
+<a class="image" href="/site/study-destination/usa"><img alt="Admissions to USA" data-position="center center" src="/images/pic01.jpg"/></a>
 <div class="content">
 <div class="inner">
 <h2>Admissions to United States</h2>
 <p>Admissions to United States</p>
 <ul class="actions">
-<li><a class="button" href="study-destination/usa.html">Learn more</a></li>
+<li><a class="button" href="/site/study-destination/usa">Learn more</a></li>
 </ul>
 </div>
 </div>
 </section>
 <!-- UK -->
 <section>
-<a class="image" href="study-destination/uk.html"><img alt="Admissions to UK" data-position="top center" src="images/pic02.jpg"/></a>
+<a class="image" href="/site/study-destination/uk"><img alt="Admissions to UK" data-position="top center" src="/images/pic02.jpg"/></a>
 <div class="content">
 <div class="inner">
 <h2>Admissions to United Kingdom</h2>
 <p>Admissions to United Kingdom</p>
 <ul class="actions">
-<li><a class="button" href="study-destination/uk.html">Learn more</a></li>
+<li><a class="button" href="/site/study-destination/uk">Learn more</a></li>
 </ul>
 </div>
 </div>
 </section>
 <!-- Canada -->
 <section>
-<a class="image" href="study-destination/canada.html"><img alt="Admissions to Canada" data-position="25% 25%" src="images/pic03.jpg"/></a>
+<a class="image" href="/site/study-destination/canada"><img alt="Admissions to Canada" data-position="25% 25%" src="/images/pic03.jpg"/></a>
 <div class="content">
 <div class="inner">
 <h2>Admissions to Canada</h2>
 <p>Admissions to Canada</p>
 <ul class="actions">
-<li><a class="button" href="study-destination/canada.html">Learn more</a></li>
+<li><a class="button" href="/site/study-destination/canada">Learn more</a></li>
 </ul>
 </div>
 </div>
 </section>
 <!-- Australia -->
 <section>
-<a class="image" href="study-destination/australia.html"><img alt="Admissions to Australia" data-position="center center" src="images/pic14.jpg"/></a>
+<a class="image" href="/site/study-destination/australia"><img alt="Admissions to Australia" data-position="center center" src="/images/pic14.jpg"/></a>
 <div class="content">
 <div class="inner">
 <h2>Admissions to Australia</h2>
 <p>Explore world-class universities in Australia</p>
 <ul class="actions">
-<li><a class="button" href="study-destination/australia.html">Learn more</a></li>
+<li><a class="button" href="/site/study-destination/australia">Learn more</a></li>
 </ul>
 </div>
 </div>
 </section>
 <!-- New Zealand -->
 <section style="background-color: #4C4EAC;">
-<a class="image" href="study-destination/newzealand.html"><img alt="Admissions to New Zealand" data-position="top center" src="images/pic09.jpg"/></a>
+<a class="image" href="/site/study-destination/newzealand"><img alt="Admissions to New Zealand" data-position="top center" src="/images/pic09.jpg"/></a>
 <div class="content">
 <div class="inner">
 <h2>Admissions to New Zealand</h2>
 <p>Admissions to New Zealand</p>
 <ul class="actions">
-<li><a class="button" href="study-destination/newzealand.html">Learn more</a></li>
+<li><a class="button" href="/site/study-destination/newzealand">Learn more</a></li>
 </ul>
 </div>
 </div>
 </section>
 <!-- Ireland -->
 <section style="background-color: #484aa3;">
-<a class="image" href="study-destination/ireland.html"><img alt="Admissions to Ireland" data-position="center center" src="images/pic11.jpg"/></a>
+<a class="image" href="/site/study-destination/ireland"><img alt="Admissions to Ireland" data-position="center center" src="/images/pic11.jpg"/></a>
 <div class="content">
 <div class="inner">
 <h2>Admissions to Ireland</h2>
 <p>Shape your career with Ireland’s top institutions</p>
 <ul class="actions">
-<li><a class="button" href="study-destination/ireland.html">Learn more</a></li>
+<li><a class="button" href="/site/study-destination/ireland">Learn more</a></li>
 </ul>
 </div>
 </div>
@@ -244,13 +244,13 @@ export default function SiteIndex(){
 </div>
 <!-- Footer -->
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
 </main><footer class="wrapper alt" id="footer">
 <div class="inner">
 <ul class="menu">

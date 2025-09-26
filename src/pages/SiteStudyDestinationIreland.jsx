@@ -1,16 +1,16 @@
 import React from 'react'
 export default function SiteStudyDestinationIreland(){ 
   return <main id="main-content" dangerouslySetInnerHTML={{ __html: `<header id="header">
-<a class="title" href="../index.html">Gradzi Overseas</a>
+<a class="title" href="/">Gradzi Overseas</a>
 <nav>
 <ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="usa.html">USA</a></li>
-<li><a href="uk.html">UK</a></li>
-<li><a href="australia.html">Australia</a></li>
-<li><a href="canada.html">Canada</a></li>
-<li><a href="newzealand.html">New Zealand</a></li>
-<li><a class="active" href="ireland.html">Ireland</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/site/study-destination/usa">USA</a></li>
+<li><a href="/site/study-destination/uk">UK</a></li>
+<li><a href="/site/study-destination/australia">Australia</a></li>
+<li><a href="/site/study-destination/canada">Canada</a></li>
+<li><a href="/site/study-destination/newzealand">New Zealand</a></li>
+<li><a class="active" href="/site/study-destination/ireland">Ireland</a></li>
 </ul>
 </nav>
 </header><main id="main-content"><a class="skip-to-content" href="#main-content">Skip to main content</a>
@@ -21,7 +21,7 @@ export default function SiteStudyDestinationIreland(){
 <section class="wrapper" id="main">
 <div class="inner">
 <h1 class="major">Study in Ireland</h1>
-<span class="image fit"><img alt="Ireland Admissions" src="../images/pic13.jpg"/></span>
+<span class="image fit"><img alt="Ireland Admissions" src="/images/pic13.jpg"/></span>
 <section class="study-ireland">
 <h2>Why Study in Ireland?</h2>
 <p>
@@ -74,13 +74,13 @@ export default function SiteStudyDestinationIreland(){
 </div>
 <!-- Footer -->
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
 </main><footer class="wrapper alt" id="footer">
 <div class="inner">
 <ul class="menu">
