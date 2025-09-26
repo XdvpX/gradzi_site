@@ -1,6 +1,3 @@
-import '/assets/css/main.css';
-import '/assets/css/noscript.css';
-import '/assets/css/fontawesome-all.min.css';
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
