@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <!-- Background (transparent) -->
+  <defs>
+    <!-- Star shape for sparkles -->
+    <symbol id="sparkle" viewBox="-10 -10 20 20">
+      <polygon points="0,-10 2,-2 10,0 2,2 0,10 -2,2 -10,0 -2,-2" fill="white" opacity="0.9"/>
+    </symbol>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Group that gently scales in/out (breathing) -->
+  <g id="logo" transform="translate(400,400) scale(1) translate(-400,-400)">
+    <image x="0" y="0" width="800" height="800" href="data:image/jpeg;base64,{b64}" />
+    <animateTransform attributeName="transform"
+                      attributeType="XML"
+                      type="translate"
+                      dur="4s"
+                      repeatCount="indefinite"
+                      values="400,400; 400,400; 400,400"
+                      keyTimes="0;0.5;1"
+                      fill="freeze" />
+  </g>
+
+  <!-- Subtle overall breathing animation (scale) applied via an outer group -->
+  <g id="breath">
+    <use href="#logo"/>
+    <animateTransform attributeName="transform"
+                      attributeType="XML"
+                      type="scale"
+                      values="1;1.03;1"
+                      dur="5s"
+                      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Sparkles positioned approximately over the central star/book area -->
+  <g filter="url(#glow)">
+    <use href="#sparkle" x="400" y="380">
+      <animateTransform attributeName="transform" type="scale" values="0.6;1.2;0.6" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+    </use>
+    <use href="#sparkle" x="360" y="350">
+      <animateTransform attributeName="transform" type="scale" values="0.5;1.1;0.5" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#sparkle" x="440" y="350">
+      <animateTransform attributeName="transform" type="scale" values="0.5;1.1;0.5" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- Gentle rotation of small decorative dots around the logo to give motion without distorting the raster -->
+  <g transform="translate(400,400)">
+    <circle r="310" fill="none" stroke="none"/>
+    <!-- Three orbiting dots -->
+    <g>
+      <circle cx="0" cy="-310" r="3">
+        <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="0" cy="-310" r="3">
+        <animate attributeName="opacity" values="0;1;0" dur="6s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="0" cy="-310" r="3">
+        <animate attributeName="opacity" values="0;1;0" dur="6s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+      <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="12s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>
