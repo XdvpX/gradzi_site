@@ -1,6 +1,6 @@
 import React from 'react'
 export default function SiteIndex(){ 
-  return <main id="main-content" dangerouslySetInnerHTML={{ __html: `<main id="main-content"><a class="skip-to-content" href="#main-content">Skip to main content</a>
+  return <main id="main-content" dangerouslySetInnerHTML={{ __html: `<main id="main-content">
 <!-- Sidebar -->
 <section id="sidebar">
 <div class="inner">
