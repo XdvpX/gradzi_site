@@ -13,7 +13,6 @@ export default function SiteStudyDestinationNewzealand(){
 <li><a href="/site/study-destination/ireland">Ireland</a></li>
 </ul>
 </nav>
-</header><main id="main-content"><a class="skip-to-content" href="#main-content">Skip to main content</a>
 <!-- Header -->
 <!-- Wrapper -->
 <div id="wrapper">
