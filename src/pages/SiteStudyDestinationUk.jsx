@@ -13,6 +13,7 @@ export default function SiteStudyDestinationUk(){
 <li><a href="/site/study-destination/ireland">Ireland</a></li>
 </ul>
 </nav>
+</header><main id="main-content">
 <!-- Header -->
 <!-- Wrapper -->
 <div id="wrapper">

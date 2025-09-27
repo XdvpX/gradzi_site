@@ -183,7 +183,7 @@ export default function SiteIndex(){
 <div class="split style1">
 <!-- Application Form -->
 <section class="application-form">
-<form action="https://formsubmit.co/a59923271b2def7ef34c50aa04b646752" method="POST">
+<form action="https://formsubmit.co/admissions@gradzi.co" method="POST">
 <h3 style="text-align:center; margin-bottom: 1em;">Application Form</h3>
 <div class="fields">
 <div class="field half">
