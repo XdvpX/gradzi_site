@@ -183,32 +183,52 @@ export default function SiteIndex(){
 <div class="split style1">
 <!-- Application Form -->
 <section class="application-form">
-<form action="https://formsubmit.co/admissions@gradzi.co" method="POST">
-<h3 style="text-align:center; margin-bottom: 1em;">Application Form</h3>
-<div class="fields">
-<div class="field half">
-<label class="sr-only" for="name">Full Name</label><input id="name" name="name" placeholder="Full Name" required="" type="text"/>
+  <form id="application-form" action="https://formsubmit.co/admissions@gradzi.co" method="POST">
+    <!-- hidden inputs to disable captcha and prevent redirect -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_redirect" value="">
+
+    <h3 style="text-align:center; margin-bottom: 1em;">Application Form</h3>
+    <div class="fields">
+      <div class="field half">
+        <label class="sr-only" for="name">Full Name</label>
+        <input id="name" name="name" placeholder="Full Name" required type="text"/>
+      </div>
+      <div class="field half">
+        <label class="sr-only" for="Phone">Phone</label>
+        <input id="Phone" name="Phone" placeholder="Phone" required type="tel"/>
+      </div>
+      <div class="field half">
+        <label class="sr-only" for="country">Country</label>
+        <input id="country" name="country" placeholder="Country" required type="text"/>
+      </div>
+      <div class="field half">
+        <label class="sr-only" for="course">Course Name</label>
+        <input id="course" name="course" placeholder="Course Name" required type="text"/>
+      </div>
+      <div class="field">
+        <label class="sr-only" for="email">Email Address</label>
+        <input id="email" name="email" placeholder="Email Address" required type="email"/>
+      </div>
+    </div>
+    <ul class="actions" style="text-align:center;">
+      <li>
+        <button class="button submit" type="submit">Submit Application</button>
+      </li>
+    </ul>
+  </form>
+
+<div id="form-success-panel" style="display:none;">
+  <div style="background:#1e293b; color:#fff; padding:1.5rem; border-radius:10px; position:relative; max-width:400px; margin:1rem auto; text-align:center;">
+    <button id="close-success" style="position:absolute; top:10px; right:15px; background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✖</button>
+    <h3>Application Submitted!</h3>
+    <p>Thank you for reaching out. We’ll get back to you shortly.</p>
+  </div>
 </div>
-<div class="field half">
-<label class="sr-only" for="Phone">Phone</label><input id="Phone" name="Phone" placeholder="Phone" required="" type="tel"/>
-</div>
-<div class="field half">
-<label class="sr-only" for="country">Country</label><input id="country" name="country" placeholder="Country" required="" type="text"/>
-</div>
-<div class="field half">
-<label class="sr-only" for="course">Course Name</label><input id="course" name="course" placeholder="Course Name" required="" type="text"/>
-</div>
-<div class="field">
-<label class="sr-only" for="email">Email Address</label><input id="email" name="email" placeholder="Email Address" required="" type="email"/>
-</div>
-</div>
-<ul class="actions" style="text-align:center;">
-<li>
-<button class="button submit" type="submit">Submit Application</button>
-</li>
-</ul>
-</form>
+
 </section>
+
+
 <!-- Contact Info -->
 <section class="contact-info">
 <ul class="contact">

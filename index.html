@@ -19,6 +19,39 @@
     <script src="/assets/js/breakpoints.min.js" defer></script>
     <script src="/assets/js/util.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
+    <script>
+window.addEventListener("load", function () {
+  const form = document.getElementById("application-form");
+  const successPanel = document.getElementById("form-success-panel");
+  const closeBtn = document.getElementById("close-success");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData
+      }).then(res => {
+        if (res.ok) {
+          successPanel.style.display = "block";
+          form.reset();
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      }).catch(() => alert("Network error."));
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      successPanel.style.display = "none";
+    });
+  }
+});
+</script>
+
 
   </body>
 </html>
