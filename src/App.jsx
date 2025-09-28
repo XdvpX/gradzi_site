@@ -2,19 +2,23 @@ import { useEffect } from "react";
 
 export default function App({ children }) {
   useEffect(() => {
-    function reInit() {
+    const reInit = () => {
       if (typeof window.initMainJS === "function") {
         console.log("Re-initializing main.js animations…");
-        window.initMainJS();
+        // Run it only once per load
+        if (!window.__mainJSInitialized) {
+          window.initMainJS();
+          window.__mainJSInitialized = true;
+        }
       } else {
-        console.warn("initMainJS not found");
+        console.warn("⚠️ initMainJS not found");
       }
-    }
+    };
 
-    // Run once immediately
-    reInit();
+    // Run after React mounts the DOM
+    setTimeout(reInit, 200);
 
-    // Run again when window fully loads (ensures images are present)
+    // Run again on full window load (ensures images)
     window.addEventListener("load", reInit);
 
     return () => {
@@ -22,5 +26,5 @@ export default function App({ children }) {
     };
   }, []);
 
-  return <div>{children}</div>;
+  return <>{children}</>;
 }
